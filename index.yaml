@@ -1,0 +1,73 @@
+apiVersion: v1
+entries:
+  jenkins:
+  - apiVersion: v1
+    appVersion: lts
+    created: "2023-05-30T14:02:11.329421-04:00"
+    deprecated: true
+    description: DEPRECATED - Open source continuous integration server. It supports
+      multiple SCM tools including CVS, Subversion and Git. It can execute Apache
+      Ant and Apache Maven-based projects as well as arbitrary scripts.
+    digest: 47c5bbdb779b3296e8e180c1f44fddf3c4f4084a01de4c1a458117a54f20f5a4
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-jnlp-slave
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - jenkins-2.5.4.tgz
+    version: 2.5.4
+  mysql:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.0.33
+    created: "2023-05-30T14:02:11.3440427-04:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: bbdc45f47bc0d2af0d38e8a959ff9cd55edeaab6428e26894574dc2322f7ef62
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    urls:
+    - mysql-9.10.1.tgz
+    version: 9.10.1
+  spark:
+  - apiVersion: v1
+    appVersion: 1.5.1
+    created: "2023-05-30T14:02:11.3469359-04:00"
+    deprecated: true
+    description: DEPRECATED - Fast and general-purpose cluster computing system.
+    digest: e0b4862812f85dcf7b92d71ed90e9f894f1aef35bb76f384fe322ba736cd10fc
+    home: http://spark.apache.org
+    icon: http://spark.apache.org/images/spark-logo-trademark.png
+    name: spark
+    sources:
+    - https://github.com/kubernetes/kubernetes/tree/master/examples/spark
+    - https://github.com/apache/spark
+    urls:
+    - spark-1.0.5.tgz
+    version: 1.0.5
+generated: "2023-05-30T14:02:11.3194045-04:00"
